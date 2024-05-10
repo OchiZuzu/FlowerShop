@@ -7,13 +7,6 @@ html {
     font-size: 1rem;
     background-color: #cccccc;
 }
-.siteTitle {
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    color: #fff;
-}
-
 
 header {
     background-image: url(../img/headerImg.jpg);
@@ -21,9 +14,6 @@ header {
     background-position: center 80%;
     box-shadow: 2px 2px 2px #202020;
     margin-bottom: 3%;
-}
-header .siteTitle {
-    padding: 1% 3%;
 }
 nav ul {
     display: flex;
@@ -34,7 +24,11 @@ nav ul {
 }
 
 .mainvisual {
-    background-color: #000000;
+    background-image: url(../img/mainvisual.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
     width: 100vw;
     height: 80vh;
     margin-bottom: 10%;
@@ -58,7 +52,6 @@ nav ul {
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    height: 100vh;
     padding: 0 3%;
 }
 .intro p {
@@ -127,11 +120,11 @@ button {
 }
 .art-right img {
     width: 50vw;
-    height: 50vh;
-    object-fit: cover;
 }
 .radius {
     border-radius: 50%;
+    width: 20%;
+    height: auto;
 }
 .art-right {
     margin-left: 8%;
@@ -139,7 +132,14 @@ button {
 
 
 .arrangement {
+    position: relative;
     height: 200vh;
+}
+.arrangement-1 {
+    position: absolute;
+    width: 30%;
+    top: 5%;
+    left: 10%;
 }
 
 footer {
@@ -160,8 +160,11 @@ footer {
     font-weight: bold;
     margin-top: 2%;
 }
+footer p {
+    margin-left: 5%;
+}
 
-footer .siteTitle {
+.siteTitle {
     position: absolute;
     bottom: 3%;
     right: 3%;
@@ -175,4 +178,62 @@ footer .siteTitle {
     position: absolute;
     top: 40%;
     right: 10%;
+    z-index: 3;
+}
+.info {
+    position: relative;
+}
+
+
+
+@media (max-width:600px) {
+    header {
+        margin-bottom: 0;
+    }
+    nav li {
+        display: none;
+    }
+    .mainvisual-text {
+        font-size: 1rem;
+    }
+    .mainvisual-text small {
+        font-size: 0.8rem;
+    }
+    .mainvisual {
+        height: 15vh;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+    .introImg {
+        width: 60vw;
+    }
+    .intro p {
+        margin: 50px 0 50px 20px;
+    }
+    .intro .left,
+    .intro .right {
+        margin-bottom: 100px;
+    }
+
+    .title3 {
+        font-size: 1rem;
+        padding: 20px 0;
+    }
+    .artGallery p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        height: 30vh;
+        padding-top: 10px;
+    }
+    .instagramIcon img{
+        width: 40px;
+        height: 40px;
+    }
 }
