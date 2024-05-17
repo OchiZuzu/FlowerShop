@@ -150,7 +150,7 @@ button {
 
 .arrangement {
     width: 1000px;
-    height: 200vh;
+    height: 3000px;
     margin: 5% auto;
 }
 
@@ -369,6 +369,7 @@ footer p {
 
 .arrangement {
     width: 400px;
+    height: 1200px;
 }
 
 .arrangement-img {
