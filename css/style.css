@@ -94,8 +94,9 @@ button {
 .artGallery {
     background-color: #940401;
     color: #f3f3f3;
-    padding: 0 3%;
+    width: 100vw;
     margin-top: 10%;
+    padding: 5% 3%;
 }
 .title2 {
     font-size: 3rem;
@@ -113,34 +114,125 @@ button {
 .artFlex {
     margin: 5% 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.art {
+    width: 1000px;
+    margin: 5% auto;
+}
+.art-left {
+    width: 400px;
 }
 .art-left img {
-    width: 40vw;
+    width: 400px;
 }
-.art-right img {
-    width: 50vw;
-}
-.radius {
-    border-radius: 50%;
-    width: 20%;
-    height: auto;
+.art-left-item {
+    width: 400px;
 }
 .art-right {
+    width: 400px;
     margin-left: 8%;
 }
+.art-right img {
+    width: 350px;
+}
+.art-right-item {
+    width: 350px;
+}
 
+.art-right-frame {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
 
 .arrangement {
-    position: relative;
+    width: 1000px;
     height: 200vh;
+    margin: 5% auto;
+}
+
+.arrangement-img {
+    position: relative;
+    width: 1000px;
+    height: 250vh;
 }
 .arrangement-1 {
     position: absolute;
-    width: 30%;
+    width: 350px;
     top: 5%;
     left: 10%;
+    transform: rotate(-10deg);
+    z-index: 2;
 }
+.arrangement-2 {
+    position: absolute;
+    width: 500px;
+    top: 2%;
+    right: 10%;
+    z-index: 1;
+}
+.arrangement-3 {
+    position: absolute;
+    width: 300px;
+    top: -10%;
+    right: 15%;
+    z-index: 3;
+}
+
+.arrangement-4 {
+    position: absolute;
+    width: 250px;
+    top: 25%;
+    right: 0;
+    z-index: 4;
+}
+.arrangement-5 {
+    position: absolute;
+    width: 380px;
+    top: 35%;
+    left: 10%;
+    transform: rotate(10deg);
+    z-index: 2;
+}
+.arrangement-5-frame::before {
+    content: "ハツラツとしたガーベラが";
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    transform: rotate(10deg);
+    z-index: 10;
+}
+.arrangement-5-frame::after {
+    content: "お部屋を明るい雰囲気に";
+    position: absolute;
+    top: 33%;
+    left: 15%;
+    transform: rotate(10deg);
+    z-index: 10;
+}
+.arrangement-6 {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    right: 20%;
+    border-radius: 50%;
+    z-index: 5;
+}
+.arrangement-6-text {
+    position: absolute;
+    width: 400px;
+    top: 67%;
+    right:-9%;
+    z-index: 6;
+}
+.black {
+    color: #202020;
+}
+
+
 
 footer {
     color: #f3f3f3;
@@ -169,6 +261,10 @@ footer p {
     bottom: 3%;
     right: 3%;
 }
+.siteTitle img {
+    width: 60%;
+}
+
 .instagram {
     position: relative;
 }
@@ -221,6 +317,9 @@ footer p {
         font-size: 1rem;
         padding: 20px 0;
     }
+    .artGallery {
+        height: 150vh;
+    }
     .artGallery p {
         font-size: 0.7rem;
         line-height: 1rem;
@@ -236,4 +335,92 @@ footer p {
         width: 40px;
         height: 40px;
     }
+
+
+    
+.art {
+    width: 400px;
+}
+.art-left {
+    width: 180px;
+}
+.art-left img {
+    width: 180px;
+}
+.art-left-item {
+    width: 180px;
+}
+.art-right {
+    width: 180px;
+}
+.art-right img {
+    width: 150px;
+}
+.art-right-item {
+    width: 150px;
+}
+
+.art-right-frame {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.arrangement {
+    width: 400px;
+}
+
+.arrangement-img {
+    width: 400px;
+}
+.arrangement-1 {
+    width: 150px;
+    top: 1%;
+    left: 5%;
+}
+.arrangement-2 {
+    width: 250px;
+    top: 2%;
+    right: 2%;
+}
+.arrangement-3 {
+    width: 150px;
+    top: -1%;
+    right: 10%;
+}
+
+.arrangement-4 {
+    width: 120px;
+    top: 10%;
+    right: -1%;
+}
+.arrangement-5 {
+    width: 170px;
+    top: 12%;
+    left: 5%;
+}
+.arrangement-5-frame::before {
+    top: 10.5%;
+    left: -3%;
+    transform: scale(0.4) rotate(10deg);
+}
+.arrangement-5-frame::after {
+    top: 11%;
+    left: -3%;
+    transform: scale(0.4) rotate(10deg);
+}
+.arrangement-6 {
+    width: 150px;
+    top: 19%;
+    right: 14%;
+}
+.arrangement-6-text {
+    width: 150px;
+    top: 25%;
+    right:-9%;
+}
+
+
+
 }
