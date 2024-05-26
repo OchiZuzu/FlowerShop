@@ -4,7 +4,8 @@ img {
 
 html {
     font-family: "Sawarabi Mincho", serif;
-    font-size: 1rem;
+    font-size: 62.5%;
+    line-height:1.666666;
     background-color: #cccccc;
     width: 100%;
 }
@@ -23,29 +24,31 @@ nav ul {
     background-color: #940401;
     padding: 1% 0;
 }
+nav ul li {
+    font-size: 2rem;
+}
 
 .mainvisual {
     background-image: url(../img/mainvisual.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
     width: 100%;
-    height: 80vh;
     margin-bottom: 10%;
     box-sizing: border-box;
 }
 .mainvisual-text-wrapper {
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 3%;
     filter: drop-shadow(4px 4px 8px rgb(243, 243, 101));
 }
 .mainvisual-text {
     color: #fff;
-    font-size: 4.5rem;
+    font-size: 6rem;
 }
 .mainvisual-text small {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -56,15 +59,16 @@ nav ul {
     width: 100%;
     padding: 0 3%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .intro p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     line-height: 2.2rem;
     margin: 50px 0 50px 100px;
 }
 button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: underline;
     margin: 50px 0 50px 100px;
     color: #f3f3f3;
@@ -76,11 +80,14 @@ button {
     display: flex;
     position: relative;
 }
+.intro .right {
+    margin-left: 100px;
+}
 .introImg {
     width: 25vw;
     filter: opacity(0.5);
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 40%;
     z-index: -1;
 }
@@ -88,9 +95,10 @@ button {
     color: #f3f3f3;
     background-color: #7c7c7c;
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     padding: 5px 5px;
+    font-weight: bold;
 }
 
 
@@ -101,7 +109,7 @@ button {
     margin-top: 10%;
     padding: 5% 3%;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: scroll;
 }
 .title2 {
     font-size: 3rem;
@@ -113,8 +121,8 @@ button {
     padding: 20px 0;
 }
 .artGallery p {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
 }
 .artFlex {
     margin: 5% 0;
@@ -123,7 +131,7 @@ button {
 }
 
 .art {
-    width: 1000px;
+    width: 100%;
     margin: 5% auto;
 }
 .art-left {
@@ -155,87 +163,88 @@ button {
 
 .arrangement {
     width: 1000px;
-    height: 3000px;
+    height: 1400px;
     margin: 5% auto;
 }
 
 .arrangement-img {
     position: relative;
     width: 1000px;
-    height: 250vh;
 }
 .arrangement-1 {
     position: absolute;
     width: 350px;
-    top: 5%;
-    left: 10%;
+    top: 40px;
+    left: 50px;
     transform: rotate(-10deg);
     z-index: 2;
 }
 .arrangement-2 {
     position: absolute;
     width: 500px;
-    top: 2%;
-    right: 10%;
+    top: 24px;
+    right: 90px;
     z-index: 1;
 }
 .arrangement-3 {
     position: absolute;
     width: 300px;
-    top: -10%;
-    right: 15%;
+    top: -160px;
+    right: 125px;
     z-index: 3;
 }
 
 .arrangement-4 {
     position: absolute;
     width: 250px;
-    top: 25%;
+    top: 420px;
     right: 0;
     z-index: 4;
 }
 .arrangement-5 {
     position: absolute;
     width: 380px;
-    top: 35%;
-    left: 10%;
+    top: 590px;
+    left: 25px;
     transform: rotate(10deg);
     z-index: 2;
 }
 .arrangement-5-frame::before {
     content: "ハツラツとしたガーベラが";
     position: absolute;
-    top: 32%;
-    left: 15%;
+    top: 500px;
+    left: 80px;
     transform: rotate(10deg);
     z-index: 10;
+    font-size: 2rem;
 }
 .arrangement-5-frame::after {
     content: "お部屋を明るい雰囲気に";
     position: absolute;
-    top: 33%;
-    left: 15%;
+    top: 535px;
+    left: 80px;
     transform: rotate(10deg);
     z-index: 10;
+    font-size: 2rem;
 }
 .arrangement-6 {
     position: absolute;
     width: 300px;
-    top: 50%;
-    right: 20%;
+    top: 840px;
+    right: 170px;
     border-radius: 50%;
     z-index: 5;
 }
 .arrangement-6-text {
     position: absolute;
     width: 400px;
-    top: 67%;
-    right:-9%;
+    top: 1112px;
+    right: -130px;
     z-index: 6;
 }
-.black {
+/* .black {
     color: #202020;
-}
+} */
 
 
 
@@ -320,26 +329,51 @@ footer p {
     .intro {
         flex-direction: column;
     }
+    .intro .right {
+        margin-left: 30%;
+    }
     .introImg {
-        width: 60vw;
+        width: 30vw;
+        filter: opacity(1);
+        top: 10%;
+    }
+    .left .introImg {
+        left: 60%;
+    }
+    .right .introImg {
+        left: -40%;
+    }
+    .right h2 {
+        font-size: 0.9rem;
     }
     .intro p {
-        margin: 50px 0 50px 20px;
+        margin: 10px 0 10px 10px;
+        font-size: 1rem;
     }
     .intro .left {
-        margin-bottom: 100px;
+        margin-bottom: 30px;
+    }
+    button {
+        font-size: 1rem;
+        margin: 10px auto;
+        padding: 3px 3px;
+    }
+
+    .title1 {
+        font-size: 1.5rem;
+        padding: 2px 2px;
     }
 
     .title3 {
-        font-size: 1rem;
-        padding: 20px 0;
+        font-size: 1.2rem;
+        padding: 10px 0;
     }
     .artGallery {
-        height: 150vh;
+        height: 1200px;
     }
     .artGallery p {
-        font-size: 0.7rem;
-        line-height: 1rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
 
     footer {
@@ -356,8 +390,9 @@ footer p {
 
     
 .art {
-    width: 400px;
+    width: 100%;
 }
+
 .art-left {
     width: 180px;
 }
@@ -375,7 +410,7 @@ footer p {
 }
 .art-right-item {
     width: 150px;
-}
+} 
 
 .art-right-frame {
     border-radius: 50%;
@@ -386,7 +421,7 @@ footer p {
 
 .arrangement {
     width: 400px;
-    height: 1200px;
+    height: 10px;
 }
 
 .arrangement-img {
@@ -394,49 +429,49 @@ footer p {
 }
 .arrangement-1 {
     width: 150px;
-    top: 1%;
-    left: 5%;
+    top: 20px;
+    left: 7px;
 }
 .arrangement-2 {
     width: 250px;
-    top: 2%;
-    right: 2%;
+    top: 25px;
+    right: 20px;
 }
 .arrangement-3 {
     width: 150px;
-    top: -1%;
-    right: 10%;
+    top: -60px;
+    right: 40px;
 }
 
 .arrangement-4 {
     width: 120px;
-    top: 10%;
-    right: -1%;
+    top: 220px;
+    right: 0;
 }
 .arrangement-5 {
     width: 170px;
-    top: 12%;
-    left: 5%;
+    top: 265px;
+    left: 10px;
 }
 .arrangement-5-frame::before {
-    top: 10.5%;
-    left: -3%;
+    top: 215px;
+    left: -35px;
     transform: scale(0.4) rotate(10deg);
 }
 .arrangement-5-frame::after {
-    top: 11%;
-    left: -3%;
+    top: 230px;
+    left: -30px;
     transform: scale(0.4) rotate(10deg);
 }
 .arrangement-6 {
     width: 150px;
-    top: 19%;
-    right: 14%;
+    top: 375px;
+    right: 60px;
 }
 .arrangement-6-text {
     width: 150px;
-    top: 25%;
-    right:-9%;
+    top: 530px;
+    right: -20px;
 }
 
 .siteTitle img {
